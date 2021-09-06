@@ -1,5 +1,5 @@
 # Random Signaling Network Generator
-A MATLAB application that generates random intracellular signaling networks based on user-defined network size and the assumptions listed below. The purpose of this app is to allow the researchers to generate a random signaling network of a size and test their methodologies on it. Once the network is generated, user can see the graphical model of the network, connection matrix of the random network, and list of generated regulatory expressions, which can be saved to a file accordingly.
+A MATLAB application that generates random intracellular signaling networks based on user-defined network size and the assumptions listed below. The purpose of this app is to allow the researchers to generate a random signaling network of a size of their choice and test their methodologies/hypothesies on it. Once the network is generated, user can see the graphical model of the network, connection matrix of the random network, and list of generated regulatory expressions, which can be saved to a file accordingly.
 
 # The folder contains two source files:
 1. RandSigNet_GeneratorApp.mlapp: Generates the interface for the application.
