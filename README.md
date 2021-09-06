@@ -19,3 +19,9 @@ A MATLAB application that generates random intracellular signaling networks base
 3. The intermediate nodes can have either none or at most numInhib inhibitors.
 4. The network does not connect self-cycle.
 5. The output nodes do not have outgoing edges.
+
+# How to run?
+To run the app, download both RandSigNet_GeneratorApp.mlapp and RandSigNet_Source.m to the same directory, and open RandSigNet_GeneratorApp.mlapp, which will bring the following screen. Then you are good to go!
+
+<img width="896" alt="RandSigNetGenApp" src="https://user-images.githubusercontent.com/17510066/132160686-bbb2aa7c-ab9c-4f90-bdaa-0a10cc2c9923.png">
+
