@@ -6,7 +6,7 @@ A MATLAB application that generates random intracellular signaling networks base
 2. RandSigNet_Source.m: The source file that generates the random signaling network.
 
 # User defined parameters in the application:
-1. netSize: Size of the network 
+1. netSize: Size of the network, i.e., the number of nodes. 
 2. numInput: The number of input nodes that the generated network is requested to have.
 3. numOutput: The number of output nodes that the generated network is requested to have.
 4. numFeedback: The maximum number of feedback interactions that the generated network is requested to have.
@@ -17,7 +17,7 @@ A MATLAB application that generates random intracellular signaling networks base
 1. Each intermediate node can have at most numAct + numInhib incoming edges.
 2. Each intermediate node has at least one activator and at most numAct activators.
 3. The intermediate nodes can have either none or at most numInhib inhibitors.
-4. The network does not connect self-cycle.
+4. The network does not have self-cycles.
 5. The output nodes do not have outgoing edges.
 
 # How to run?
