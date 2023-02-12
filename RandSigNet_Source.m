@@ -71,7 +71,8 @@ function net = RandSigNet_Source(netSize, numInput, numOutput, numFeedback, numA
         if(min(sort([numInput + 1, netSize - numOutput - 1])) <= numInput || max(sort([numInput + 1, netSize - numOutput - 1])) >= netSize - numOutput)
             warning('The network size was not ptoperly selected! There is either no intermedite node or just one intermediate node. So feedback has not been added!');
         else
-            fbReceivingNodes = randi(sort([numInput + 1, netSize - numOutput - 1]),1,numFeedback);
+            %fbReceivingNodes = randi(sort([numInput + 1, netSize - numOutput - 1]),1,numFeedback); % Selects at least one at most numFeedback candidates to receive feedback
+            fbReceivingNodes = randperm(netSize - numOutput - 1 - numInput, numFeedback) + numInput; % Selects exactly numFeedback candidates to receive feedback
 
             for i = 1:numFeedback
 
